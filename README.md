@@ -1,4 +1,5 @@
 ### alonememo
+<>
 ###### 서버는 파이썬에서 FLASK, Beautifulsoup, Json을 import하여 구축했고,
 ###### 클라이언트는 html CSS를 이용했습니다. 
 ###### DB는 mongoDB를 사용했습니다. -> Robo 3T라는 프로그램을 쓰면 DB의 내용을 항목화해서 보기 편합니다.
