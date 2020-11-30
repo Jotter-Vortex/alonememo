@@ -1,0 +1,46 @@
+.jumbotron{
+                background-image: url("http://www.matcl.com/files/attach/images/2791205/737/298/004/1bf3b0c5a6b7971485ae99113744ebc5.png");
+                background-size: 100%;
+            }
+
+            * {
+                font-family: 'Poor Story', cursive;
+            }
+
+            .card-body{
+                background-image: url("https://i.pinimg.com/originals/35/f1/41/35f14155016759ba2747ffb8a363d0a8.jpg");
+                /*background-image: url("https://i.pinimg.com/564x/70/68/1c/70681cb3d1a963cae4675ed2c77a308f.jpg");*/
+                /*background-image: url("https://i.pinimg.com/236x/a0/29/c9/a029c90bef875a8db4d896e93aa252e9.jpg");*/
+                /*background-image: url("https://img1.daumcdn.net/thumb/R720x0/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fliveboard%2Fbloter%2F74b9579a3b584e06ad39cc706d25daee.jpg");*/
+                /*background-image: url("https://i.pinimg.com/564x/c5/c5/f8/c5c5f8d0b2f6afc2e755f646605ce173.jpg");*/
+                /*background-image: url("https://i.pinimg.com/564x/b6/9f/8a/b69f8aaa1c4f19d555b0936b917eea5f.jpg");*/
+                /*background-image : url("https://i.pinimg.com/564x/3c/26/b5/3c26b54aec45adb075d0d8587845bb72.jpg");*/
+                background-position: center;
+                background-size: cover;
+            }
+
+            .wrap {
+                width: 1000px;
+                margin: auto;
+            }
+
+            .comment {
+                color: blue;
+                font-weight: bold;
+            }
+
+            #post-box {
+                width: 400px;
+                margin: 1px;
+                padding: 2px;
+                border-radius: 5px;
+            }
+            #versioninfo{
+                display: none;
+            }
+
+            pre {
+                padding: 10px;
+                overflow: auto;
+                white-space: pre-wrap; /* pre tag내에 word wrap */
+            }
