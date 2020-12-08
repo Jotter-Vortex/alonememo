@@ -1,9 +1,10 @@
 ### alonememo
 <http://changjin001.shop>
-###### Server는 파이썬에서 FLASK, Beautifulsoup, Json을 import하여 구축했고 아마존 AWS에서 UBUNTU 18.04 버전으로 돌리고 있습니다.
+###### Server는 파이썬에서 FLASK, Beautifulsoup, Json등을 사용하여 구축했고 필요한 기능은 패키지를 추가해서 사용했습니다. 아마존 AWS에서 UBUNTU 18.04 버전으로 돌리고 있습니다.
 ###### Client는 html CSS를 이용했습니다. 
-###### DB는 mongoDB를 사용했습니다. -> Robo 3T라는 프로그램을 쓰면 DB의 내용을 항목화해서 보기 편합니다.
+###### DataBase는 mongoDB를 사용했습니다. -> Robo 3T라는 프로그램을 쓰면 DB의 내용을 항목화해서 보기 편합니다.
 ###### Server에 file을 옮길 때 FileZilla라는 프로그램을 사용하면 편합니다.
+###### Port Forwarding으로 80포트로 오는 요청을 5000포트로 전달했습니다.
 
 ###### //
 ###### <version_info>
