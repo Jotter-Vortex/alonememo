@@ -1,10 +1,42 @@
 ### alonememo
-<http://changjin001.shop>
-###### Server는 파이썬에서 FLASK, Beautifulsoup, Json등을 사용하여 구축했고 필요한 기능은 패키지를 추가해서 사용했습니다. 아마존 AWS에서 UBUNTU 18.04 버전으로 돌리고 있습니다.
-###### Client는 html CSS를 이용했습니다. 
-###### DataBase는 mongoDB를 사용했습니다. -> Robo 3T라는 프로그램을 쓰면 DB의 내용을 항목화해서 보기 편합니다.
-###### Server에 file을 옮길 때 FileZilla라는 프로그램을 사용하면 편합니다.
-###### Port Forwarding으로 80포트로 오는 요청을 5000포트로 전달했습니다.
+[changmemo]<http://changjin.me/memomain>
+
+###### * 기술 스택
+    −  Server-side
+    −  1. python3
+    −  2. MongoDB
+    -  3. Jinja2
+    -  4. AWS
+    -  5. EC2 t2 micro
+    
+###### * for server
+    −  ssh -i key ubuntu@IPNUM
+    −  ps -ef | grep app.py
+    −  kill -9
+    -  sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 5000
+    -  pip install requests beautifulsoup4 pymongo
+    -  5. EC2 t2 micro   
+###### * for MongoDB
+    −   wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+    -   echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+    -   sudo apt-get update
+    -   sudo apt-get install -y mongodb-org
+    -   sudo service mongod start
+    -   >mongo
+    -   use admin;
+    -   db.createUser({user: "test", pwd: "test", roles:["root"]});
+    -   sudo service mongod restart
+    -   sudo vi /etc/mongod.conf
+    -   * bindIp : 0.0.0.0
+    -   * security : authorization: enabled #주석제거
+    
+###### * for pip
+    −  sudo apt-get update
+    −  sudo apt-get install -y python3-pip
+    −  pip3 --version
+    -  sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
+    -  >pip install flask
+   
 
 ###### //
 ###### <version_info>
