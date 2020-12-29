@@ -16,11 +16,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
                 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
                 crossorigin="anonymous"></script>
+           <!-- 구글폰트 -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+<!--        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">-->
 
-        <!-- 구글폰트 -->
-        <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+<!--        <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">-->
 
         <link rel="stylesheet" href = "{{ url_for('static', filename='css/memostyle.css') }}">
 
@@ -87,8 +89,8 @@
                 content_index = index+2;
                 let temp_html =  `<div id="${index}" class="card">
                         <div class="card-body">
-                        <pre id="${title_index}" style="font-size : large; font-family: 'Poor Story', cursive;" class="card-title">${title}</pre>
-                        <pre id="${content_index}" style="font-size : large; font-family: 'Poor Story', cursive;" class="card-text">${content}</pre>
+                        <pre id="${title_index}" style="font-size : medium; font-family: 'Noto Sans KR', sans-serif;" class="card-title">${title}</pre>
+                        <pre id="${content_index}" style="font-size : medium; font-family: 'Noto Sans KR', sans-serif;" class="card-text">${content}</pre>
                         <pre></pre>
                         <pre id="${time}" class="card-text">${time}</pre>
                         <button type="button" class="btn btn-secondary btn-sm" onclick="rewrite('${index}')">수정</button>
@@ -129,7 +131,7 @@
                            let content_old = tclist[0]["content"];
 
                            let temp_html = `<div id="'${index}'" class="card">
-                        <div class="card-body">
+                        <div class="card-body" style="height: 310px;">
                        <div>
                     <div class="form-group">
                         <textarea type ="text" id="rewrite-title" class="form-control">${title_old}</textarea>
@@ -205,9 +207,9 @@
                 </a>
                 <div style="float: right; font-size: small" id = "versioninfo">
                     <div> <사용법> </div>
-                    <div>메모쓰기 : 메모제목, 메모내용을 입력한다</div>
-                    <div>메모수 : 수정 버튼을 누르고 메모제목, 메모내용을 입력한다.</div>
-                    <div>삭제 : 삭제 버튼을 누른다.</div>
+                    <div>메모저장 : 메모제목, 메모내용을 입력하고 저장하기를 누른다.</div>
+                    <div>메모수정 : 수정 버튼을 누르고 메모제목, 메모내용을 입력한 다음 저장 버튼을 누른다.</div>
+                    <div>메모삭제 : 삭제 버튼을 누른다.</div>
                     <div> <버전정보> </div>
                     <div> //ver 5.02 - 메모 정렬을 최신순과 시간순 선택 가능  </div>
                     <div> //ver 6.0 - 메모 저장 시간을 표시함. 년/월/일/시간 순서</div>
